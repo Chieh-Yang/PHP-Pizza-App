@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv"="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="HandheldFriendly" content="True">
+	<title>Chieh Yang's WebApp</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="css/concise.min.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/masthead.css" />
+</head>
+<body>
+	</main>
+	<!-- END of DYNAMIC CONTENT -->
+	<footer container class="siteFooter">
+		<p>&copy; 2018 Chieh Yang Pizza. Design uses <a href="http://concisecss.com/">Concise CSS Framework</a></p>
+		<?php
+		//Set the time zone
+		date_default_timezone_set('America/Toronto');
+		// Print the current time and date
+		print "<p class='float--right'>" . date('l F j, Y') . "</p>";
+		?>
+	</footer>
+</body>
+</html>
+<?php
+// Stop output buffering and send the contents to the browser
+ob_end_flush();
+?>
